@@ -14,7 +14,8 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Initialize SQLite database
-const db = new sqlite3.Database('./tasks.db', (err) => {
+const dbPath = process.env.NODE_ENV === 'production' ? './data/tasks.db' : './tasks.db';
+const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error('Error opening database:', err.message);
   } else {
