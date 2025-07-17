@@ -1,0 +1,28 @@
+{
+  "name": "prologue-project-management",
+  "version": "1.0.0",
+  "description": "Ultra simple Express Node.js project management tool with kanban board",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "express",
+    "nodejs",
+    "project-management",
+    "kanban",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "MIT"
+}
